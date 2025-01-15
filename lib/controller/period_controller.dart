@@ -68,7 +68,7 @@ class PeriodController extends GetxController {
         lastDate: DateTime(3000));
 
     if (dateTime != null) {
-      if (dateTime.difference(periodStartDate).inDays > 5) {
+      if (dateTime.difference(periodStartDate).inDays > 4) {
         onChangeSelectedPurityDate(dateTime);
       } else {
         Get.showSnackbar(const GetSnackBar(
@@ -170,4 +170,7 @@ class PeriodController extends GetxController {
 
   DateTime get lastFertilityDate =>
       safetyDate.subtract(const Duration(days: 1));
+
+  bool get isHasFirstSafetyPeriod =>
+  purityStartDate.difference(toFirstSafetyPeriod).inDays <= 0;
 }
