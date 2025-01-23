@@ -19,7 +19,7 @@ class _HelpMeScreenState extends State<HelpMeScreen> {
       textDirection: TextDirection.rtl,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('معلومات'),
+          title: const Text('المرجع'),
         ),
         body: PdfView(
           scrollDirection: Axis.vertical,

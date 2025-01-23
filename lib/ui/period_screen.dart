@@ -37,7 +37,7 @@ class _PeriodScreenState extends State<PeriodScreen> {
                 ],
               ),
               body: Padding(
-                padding: const EdgeInsets.all(15),
+                padding: const EdgeInsets.all(17),
                 child: Column(
                   children: [
                     Expanded(
